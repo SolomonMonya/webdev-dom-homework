@@ -119,7 +119,7 @@ const buttonEventClick = (replyUserComment) => {
               return;
             };
         
-            let timeForFetch = format(new Date, `yyyy-MM-dd hh:mm`);
+            let timeForFetch = new Date();
             let userNameForFetch = addFormUserName.value.replaceAll("&", "&amp;")
             .replaceAll("<", "&lt;")
             .replaceAll(">", "&gt;")

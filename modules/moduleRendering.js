@@ -168,7 +168,7 @@ export const loadingСompleteFunctionButton = () => {
 // V                                                                                                          V
 export const renderComments = (arrComments) => {
 
-    const commentsHtml = arrComments.map((comment, index) => {
+    const commentsHtml = arrComments.map((comment, index) => { 
   
       return `<li data-index="${index}" id="comment" class="comment -use-reply-comment">
   

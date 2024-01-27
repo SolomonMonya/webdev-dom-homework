@@ -11,6 +11,11 @@ import { errorTextChecking } from "./moduleMiniFunctions.js";
 import { loadingStartFunctionButton } from "./moduleRendering.js";
 import { loadingСompleteFunctionButton } from "./moduleRendering.js";
 
+
+// Node_Module functions
+
+import { format } from "date-fns";
+
 // |                                                                                                          |
 // Это блок для импорта функций_______________________________________________________________________________|
 
@@ -36,7 +41,7 @@ export const functionGetArrComments = async () => {
 
             return {
                 name: comment.author.name,
-                date: comment.date,
+                date: format(new Date(comment.date), 'yyyy-MM-dd HH.mm.ss'),
                 commentText: comment.text,
                 numLike: comment.likes,
                 liked: comment.isLiked,
